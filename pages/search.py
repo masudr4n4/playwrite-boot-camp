@@ -12,7 +12,6 @@ class DuckDuckGoSearchPage:
 
     def __init__(self, page: Page) -> None:
         self.page = page
-        self.search_button = page.get_by_label("search")
         self.search_button = page.locator('button[type=submit]')
         #searchbox_homepage > div > div > button
         self.search_input = page.locator('#searchbox_input')
